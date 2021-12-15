@@ -219,7 +219,6 @@
 // let af = testElse(10);
 // console.log(af);
 
-
 // // Introducing Else If Statements
 // function testElseIf(val) {
 //   if (val > 10) {
@@ -234,7 +233,6 @@
 // }
 // let a = testElseIf(10);
 // console.log(a);
-
 
 // // Logical Order in If Else Statements
 // function orderMyLogic(val) {
@@ -255,7 +253,6 @@
 // console.log(a6);
 // console.log(a11);
 
-
 // Chaining If Else Statements
 // function testSize(num) {
 //   // Only change code below this line
@@ -275,3 +272,166 @@
 
 // let a = testSize(16.2333333);
 // console.log(a);
+
+// // Golf Code
+// const names = [
+//   "Hole-in-one!",
+//   "Eagle",
+//   "Birdie",
+//   "Par",
+//   "Bogey",
+//   "Double Bogey",
+//   "Go Home!",
+// ];
+
+// function golfScore(par, strokes) {
+//   // Only change code below this line
+//   if (par == 4 && strokes == 1) {
+//     return names[0];
+//   } else if (par == 4 && strokes == 2) {
+//     return names[1];
+//   } else if (par == 5 && strokes == 2) {
+//     return names[1];
+//   } else if (par == 4 && strokes == 3) {
+//     return names[2];
+//   } else if (par == 4 && strokes == 4) {
+//     return names[3];
+//   } else if (par == 1 && strokes == 1) {
+//     return names[0];
+//   } else if (par == 5 && strokes == 5) {
+//     return names[3];
+//   } else if (par == 4 && strokes == 5) {
+//     return names[4];
+//   } else if (par == 4 && strokes == 6) {
+//     return names[5];
+//   } else if (par == 4 && strokes == 7) {
+//     return names[6];
+//   } else if (par == 5 && strokes == 9) {
+//     return names[6];
+//   }
+//   // Only change code above this line
+// }
+
+// let holeInOne = golfScore(4, 1);
+// console.log(holeInOne);
+// let Eage = golfScore(4, 2);
+// console.log(Eage);
+// let Eage1 = golfScore(5, 2);
+// console.log(Eage1);
+// let Birdie = golfScore(4, 3);
+// console.log(Birdie);
+// let Par = golfScore(4, 4);
+// console.log(Par);
+// let HoleInOne1 = golfScore(1, 1);
+// console.log(HoleInOne1);
+
+// // Selecting from Many Options with Switch Statements
+// function caseInSwitch(val) {
+//   let answer = "";
+//   // Only change code below this line
+//   switch (val) {
+//     case 1:
+//       return "alppha";
+//       break;
+//     case 2:
+//       return "beta";
+//       break;
+//     case 3:
+//       return "gamma";
+//       break;
+//     case 4:
+//       return "delta";
+//       break;
+//   }
+//   // Only change code above this line
+// }
+
+// let a = caseInSwitch(1);
+// console.log(a);
+
+// Adding a Default Option in Switch Statements
+// function switchOfStuff(val) {
+//   let answer = "";
+//   // Only change code below this line
+//   switch (val) {
+//     case "a":
+//       answer = "aple";
+//       break;
+//     case "b":
+//       answer = "bird";
+//       break;
+//     case "c":
+//       answer = "cat";
+//       break;
+//     default:
+//       answer = "stuff";
+//       break;
+//   }
+//   return answer;
+//   // Only change code above this line
+// }
+
+// let a = switchOfStuff("e");
+// console.log(a);
+
+// // Multiple Identical Options in Switch Statements
+// function sequentialSizes(val) {
+//   let answer = "";
+//   // Only change code below this line
+//   switch (val) {
+//     case 1:
+//     case 2:
+//     case 3:
+//       answer = "Low";
+//       break;
+//     case 4:
+//     case 5:
+//     case 6:
+//       answer = "Mid";
+//       break;
+//     case 7:
+//     case 8:
+//     case 9:
+//       answer = "High";
+//       break;
+//   }
+//   // Only change code above this line
+//   return answer;
+// }
+
+// let a = sequentialSizes(1);
+// console.log(a);
+
+// // Replacing If Else Chains with Switch
+// function chainToSwitch(val) {
+//   let answer = "";
+//   // Only change code below this line
+
+//   switch (val) {
+//     case "bob":
+//       answer = "Marley";
+//       break;
+//     case 42:
+//       answer = "The Answer";
+//       break;
+//     case 1:
+//       answer = "There is no #1";
+//       break;
+//     case 99:
+//       answer = "Missed me by this much!";
+//       break;
+//     case 7:
+//       answer = "Ate Nine";
+//       break;
+//     case "Jhon":
+//       answer = "";
+//       break;
+//     case 156:
+//       answer = "";
+//       break;
+//   }
+//   // Only change code above this line
+//   return answer;
+// }
+
+// chainToSwitch(7);
