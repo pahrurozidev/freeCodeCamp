@@ -467,33 +467,117 @@
 // console.log(c);
 
 // Counting Cards
-let count = 0;
+// let count = 0;
 
-function cc(card) {
-  // Only change code below this line
-  switch (card) {
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-      count++;
-      break;
-    case 7:
-    case 8:
-    case 9:
-      break;
-    default:
-      count--;
-      break;
-    }
+// function cc(card) {
+//   // Only change code below this line
+//   switch (card) {
+//     case 2:
+//     case 3:
+//     case 4:
+//     case 5:
+//     case 6:
+//       count++;
+//       break;
+//     case 7:
+//     case 8:
+//     case 9:
+//       break;
+//     default:
+//       count--;
+//       break;
+//     }
     
-    return count > 0 ? count + ' Bet' : count + ' Hold';
-  // Only change code above this line
-}
+//     return count > 0 ? count + ' Bet' : count + ' Hold';
+//   // Only change code above this line
+// }
 
-cc(2);
-cc(3);
-cc(7);
-cc("K");
-console.log(cc("A"));;
+// cc(2);
+// cc(3);
+// cc(7);
+// cc("K");
+// console.log(cc("A"));
+
+
+// // Build JavaScript Objects
+// const myDog = {
+//   // Only change code below this line
+//   name: 'dogy',
+//   legs: 4,
+//   tails: 1,
+//   friends: ['yogi', 'macan', 'bebek']
+
+//   // Only change code above this line
+// };
+
+
+// Accessing Object Properties with Dot Notation
+// Setup
+// const testObj = {
+//   "hat": "ballcap",
+//   "shirt": "jersey",
+//   "shoes": "cleats"
+// };
+
+// // Only change code below this line
+// const hatValue = testObj.hat;      // Change this line
+// const shirtValue = testObj.shirt;    // Change this line
+// console.log(hatValue, shirtValue);
+
+
+// Accessing Object Properties with Bracket Notation
+// Setup
+// const testObj = {
+//   "an entree": "hamburger",
+//   "my side": "veggies",
+//   "the drink": "water"
+// };
+
+// // Only change code below this line
+// const entreeValue = testObj['an entree'];   // Change this line
+// const drinkValue = testObj['the drink'];    // Change this line
+
+// console.log(entreeValue, '|', drinkValue);
+
+// Accessing Object Properties with Variables
+// Setup
+// const testObj = {
+//   12: "Namath",
+//   16: "Montana",
+//   19: "Unitas"
+// };
+
+// // Only change code below this line
+// const playerNumber = 16;  // Change this line
+// const player = testObj[playerNumber];   // Change this line
+// console.log(player);
+
+// // Updating Object Properties
+// // Setup
+// const myDog = {
+//   "name": "Coder",
+//   "legs": 4,
+//   "tails": 1,
+//   "friends": ["freeCodeCamp Campers"]
+// };
+
+// // Only change code below this line
+
+// let nama1 = myDog['name'] = 'Happy Coder';
+// let nama2 = myDog.name = 'Happy Coder';
+// console.log(nama1, '|', nama2);
+
+
+// Add New Properties to a JavaScript Object
+const myDog = {
+  name: "Happy Coder",
+  legs: 4,
+  tails: 1,
+  friends: ["freeCodeCamp Campers"],
+};
+
+myDog.bark = 'Woof';
+
+console.log(myDog);
+
+
