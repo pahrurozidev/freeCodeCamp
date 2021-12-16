@@ -435,3 +435,65 @@
 // }
 
 // chainToSwitch(7);
+
+// Returning Boolean Values from Functions
+// function isLess(a, b) {
+//   // Only change code below this line
+//     return b > a;
+//   // Only change code above this line
+// }
+
+// let a = isLess(10, 15);
+// let b = isLess(15, 10);
+// console.log(a);
+// console.log(b);
+
+// // Return Early Pattern for Functions
+// // Setup
+// function abTest(a, b) {
+//   // Only change code below this line
+//   if (a < 0 || b < 0) {
+//     return undefined;
+//     }
+//     return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+//   // Only change code above this line
+// }
+
+// let a = abTest(2, 2);
+// let b = abTest(-2, 2);
+// let c = abTest(2, 8);
+// console.log(a);
+// console.log(b);
+// console.log(c);
+
+// Counting Cards
+let count = 0;
+
+function cc(card) {
+  // Only change code below this line
+  switch (card) {
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+      count++;
+      break;
+    case 7:
+    case 8:
+    case 9:
+      break;
+    default:
+      count--;
+      break;
+    }
+    
+    return count > 0 ? count + ' Bet' : count + ' Hold';
+  // Only change code above this line
+}
+
+cc(2);
+cc(3);
+cc(7);
+cc("K");
+console.log(cc("A"));;
