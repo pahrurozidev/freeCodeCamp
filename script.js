@@ -354,13 +354,13 @@
 //   let answer = "";
 //   // Only change code below this line
 //   switch (val) {
-//     case "a":
+//     "a":
 //       answer = "aple";
 //       break;
-//     case "b":
+//     "b":
 //       answer = "bird";
 //       break;
-//     case "c":
+//     "c":
 //       answer = "cat";
 //       break;
 //     default:
@@ -408,7 +408,7 @@
 //   // Only change code below this line
 
 //   switch (val) {
-//     case "bob":
+//     "bob":
 //       answer = "Marley";
 //       break;
 //     case 42:
@@ -423,7 +423,7 @@
 //     case 7:
 //       answer = "Ate Nine";
 //       break;
-//     case "Jhon":
+//     "Jhon":
 //       answer = "";
 //       break;
 //     case 156:
@@ -487,7 +487,7 @@
 //       count--;
 //       break;
 //     }
-    
+
 //     return count > 0 ? count + ' Bet' : count + ' Hold';
 //   // Only change code above this line
 // }
@@ -497,7 +497,6 @@
 // cc(7);
 // cc("K");
 // console.log(cc("A"));
-
 
 // // Build JavaScript Objects
 // const myDog = {
@@ -509,7 +508,6 @@
 
 //   // Only change code above this line
 // };
-
 
 // Accessing Object Properties with Dot Notation
 // Setup
@@ -523,7 +521,6 @@
 // const hatValue = testObj.hat;      // Change this line
 // const shirtValue = testObj.shirt;    // Change this line
 // console.log(hatValue, shirtValue);
-
 
 // Accessing Object Properties with Bracket Notation
 // Setup
@@ -567,17 +564,123 @@
 // let nama2 = myDog.name = 'Happy Coder';
 // console.log(nama1, '|', nama2);
 
-
 // Add New Properties to a JavaScript Object
-const myDog = {
-  name: "Happy Coder",
-  legs: 4,
-  tails: 1,
-  friends: ["freeCodeCamp Campers"],
+// const myDog = {
+//   name: "Happy Coder",
+//   legs: 4,
+//   tails: 1,
+//   friends: ["freeCodeCamp Campers"],
+// };
+
+// myDog.bark = 'Woof';
+
+// console.log(myDog);
+
+// // Delete Properties from a JavaScript Object
+// // Setup
+// const myDog = {
+//   "name": "Happy Coder",
+//   "legs": 4,
+//   "tails": 1,
+//   "friends": ["freeCodeCamp Campers"],
+//   "bark": "woof"
+// };
+
+// // Only change code below this line
+
+// console.log(myDog);
+// let mdog = delete myDog.tails;
+// console.log(myDog);
+
+// Using Objects for Lookups
+// // Setup
+// function phoneticLookup(val) {
+//   let result = "";
+
+//   // Only change code below this line
+//   let obj = {
+//     alpha: "Adams",
+//     bravo: "Boston",
+//     charlie: "Chicago",
+//     delta: "Denver",
+//     echo: "Easy",
+//     foxtrot: "Frank"
+//   };
+//   result = obj[val];
+//   // Only change code above this line
+//   return result;
+// }
+
+// let adams = phoneticLookup("alpha");
+// console.log(adams);
+// let boston = phoneticLookup("bravo");
+// console.log(boston);
+// let chicago = phoneticLookup("charlie");
+// console.log(chicago);
+// let denver = phoneticLookup("delta");
+// console.log(denver);
+// let easy = phoneticLookup("echo");
+// console.log(easy);
+// let frank = phoneticLookup("foxtrot");
+// console.log(frank);
+// let undefine = phoneticLookup("");
+// console.log(undefine);
+
+// // Testing Objects for Properties
+// function checkObj(obj, checkProp) {
+//   // Only change code below this line
+//   if (obj.hasOwnProperty("gift") && checkProp == "gift") {
+//     return obj.gift;
+//   } else if (obj.hasOwnProperty("pet") && checkProp == "pet") {
+//     return obj.pet;
+//   } else if (
+//     checkProp == "house" ||
+//     checkProp == "district" ||
+//     checkProp == "gift"
+//   ) {
+//     return "Not Found";
+//   } else if (obj.hasOwnProperty("city") && checkProp == "city") {
+//     return "Seattle";
+//   }
+//   // Only change code above this line
+// }
+
+// let pony = checkObj({ gift: "pony", pet: "kitten", bed: "sleigh" }, "gift");
+// console.log(pony);
+// let pet = checkObj({ gift: "pony", pet: "kitten", bed: "sleigh" }, "pet");
+// console.log(pet);
+// let house = checkObj({ gift: "pony", pet: "kitten", bed: "sleigh" }, "house");
+// console.log(house);
+
+// // Manipulating Complex Objects
+// const myMusic = [
+//   {
+//     artist: "Billy Joel",
+//     title: "Piano Man",
+//     release_year: 1973,
+//     formats: ["CD", "8T", "LP"],
+//     gold: true,
+//   },
+//   {
+//     artist: "Pahrurozi",
+//     title: "Natural",
+//     release_year: 2021,
+//     formats: ['a', 'b', 'c']
+//   },
+// ];
+
+// Accessing Nested Objects
+const myStorage = {
+  car: {
+    inside: {
+      "glove box": "maps",
+      "passenger seat": "crumbs",
+    },
+    outside: {
+      trunk: "jack",
+    },
+  },
 };
 
-myDog.bark = 'Woof';
-
-console.log(myDog);
-
-
+const gloveBoxContents = myStorage.car.inside["glove box"];
+console.log(gloveBoxContents);
