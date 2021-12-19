@@ -669,18 +669,84 @@
 //   },
 // ];
 
-// Accessing Nested Objects
-const myStorage = {
-  car: {
-    inside: {
-      "glove box": "maps",
-      "passenger seat": "crumbs",
-    },
-    outside: {
-      trunk: "jack",
-    },
-  },
-};
+// accessing nested arrays
+// const myPlants = [
+//   {
+//     type: "flowers",
+//     list: ["rose", "tulip", "dandelion"],
+//   },
+//   {
+//     type: "trees",
+//     list: ["fir", "pine", "birch"],
+//   },
+// ];
 
-const gloveBoxContents = myStorage.car.inside["glove box"];
-console.log(gloveBoxContents);
+// const secondTree = myPlants[1].list[1];
+// console.log(secondTree);
+
+// // Setup
+// const recordCollection = {
+//   2548: {
+//     albumTitle: "Slippery When Wet",
+//     artist: "Bon Jovi",
+//     tracks: ["Let It Rock", "You Give Love a Bad Name"],
+//   },
+//   2468: {
+//     albumTitle: "1999",
+//     artist: "Prince",
+//     tracks: ["1999", "Little Red Corvette"],
+//   },
+//   1245: {
+//     artist: "Robert Palmer",
+//     tracks: [],
+//   },
+//   5439: {
+//     albumTitle: "ABBA Gold",
+//   },
+// };
+
+// // Only change code below this line
+// function updateRecords(records, id, prop, value) {
+//   if (prop !== "tracks" && value !== "") {
+//     records[id][prop] = value;
+//   } else if (
+//     prop === "tracks" &&
+//     records[id].hasOwnProperty("tracks") === false
+//   ) {
+//     records[id][prop] = [value];
+//   } else if (prop === "tracks" && value !== "") {
+//     records[id][prop].push(value);
+//   } else if (value === "") {
+//     delete records[id][prop];
+//   }
+//   return records;
+// }
+
+// let artist1 = updateRecords(recordCollection, 5439, "tracks", "ABBA");
+// let artist2 = updateRecords(recordCollection, 2548, "artist", "");
+// console.log(artist1);
+// console.log(artist2);
+
+// Iterate with JavaScript While Loops
+// // // Setup
+// const myArray = [];
+// let i = 5;
+
+// // // Only change code below this line
+// while (i > -1) {
+//   myArray.push(i);
+//   i--;
+// }
+
+// console.log(myArray);
+
+// Iterate with JavaScript For Loops
+// Setup
+const myArray = [];
+
+// Only change code below this line
+for (let i = 1; i < 6; i++) {
+  myArray.push(i);
+}
+
+console.log(myArray);
