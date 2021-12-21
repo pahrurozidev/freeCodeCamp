@@ -742,11 +742,95 @@
 
 // Iterate with JavaScript For Loops
 // Setup
+// const myArray = [];
+
+// // Only change code below this line
+// for (let i = 1; i < 6; i++) {
+//   myArray.push(i);
+// }
+
+// console.log(myArray);
+
+// Iterate Odd Numbers With a For Loop
+// Setup
+// const myArray = [];
+
+// // Only change code below this line
+// for (let i = 1; i < 10; i += 2) {
+//     myArray.push(i);
+// }
+
+// console.log(myArray);
+
+// // Count Backwards With a For Loop
+// // Setup
+// const myArray = [];
+
+// // Only change code below this line
+
+// for (let i = 9; i > 0; i -= 2) {
+//     myArray.push(i);
+// }
+
+// console.log(myArray);
+
+// // Iterate Through an Array with a For Loop
+// // Setup
+// const myArr = [2, 3, 4, 5, 6];
+
+// // Only change code below this line
+// let total = 0;
+
+// for (let i = 0; i < myArr.length; i++) {
+//     total += myArr[i];
+// }
+
+// console.log(total);
+
+// // Nesting For Loops
+// function multiplyAll(arr) {
+//   let product = 1;
+//   // Only change code below this line
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr[i].length; j++) {
+//       product = product * arr[i][j];
+//     }
+//   }
+
+//   // Only change code above this line
+//   return product;
+// }
+
+// let enam = multiplyAll([[1], [2], [3]]); // 6
+// console.log(enam);
+
+// let limaNolEmpatNol = multiplyAll([
+//   [1, 2],
+//   [3, 4],
+//   [5, 6, 7],
+// ]); // 5040
+
+// console.log(limaNolEmpatNol);
+
+// let LimaEmpat = multiplyAll([
+//   [5, 1],
+//   [0.2, 4, 0.5],
+//   [3, 9],
+// ]); //54
+
+// console.log(LimaEmpat);
+
+// Iterate with JavaScript Do...While Loops
+// Setup
 const myArray = [];
+let i = 10;
 
 // Only change code below this line
-for (let i = 1; i < 6; i++) {
+do {
   myArray.push(i);
-}
+  i++;
+} while (i < 10);
+
+console.log(i);
 
 console.log(myArray);
