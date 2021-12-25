@@ -822,15 +822,119 @@
 
 // Iterate with JavaScript Do...While Loops
 // Setup
-const myArray = [];
-let i = 10;
+// const myArray = [];
+// let i = 10;
 
-// Only change code below this line
-do {
-  myArray.push(i);
-  i++;
-} while (i < 10);
+// // Only change code below this line
+// do {
+//   myArray.push(i);
+//   i++;
+// } while (i < 10);
 
-console.log(i);
+// console.log(i);
 
-console.log(myArray);
+// console.log(myArray);
+
+// // Replace Loops using Recursion
+// function sum(arr, n) {
+//   if (n <= 0) {
+//     return 0;
+//   } else {
+//     return sum(arr, n - 1) + arr[n - 1];
+//   }
+// }
+// let nol = sum([2, 3, 4, 5], 3);
+// console.log(nol);
+
+// Profile Lookup
+// Setup
+// const contacts = [
+//   {
+//     firstName: "Akira",
+//     lastName: "Laine",
+//     number: "0543236543",
+//     likes: ["Pizza", "Coding", "Brownie Points"],
+//   },
+//   {
+//     firstName: "Harry",
+//     lastName: "Potter",
+//     number: "0994372684",
+//     likes: ["Hogwarts", "Magic", "Hagrid"],
+//   },
+//   {
+//     firstName: "Sherlock",
+//     lastName: "Holmes",
+//     number: "0487345643",
+//     likes: ["Intriguing Cases", "Violin"],
+//   },
+//   {
+//     firstName: "Kristian",
+//     lastName: "Vos",
+//     number: "unknown",
+//     likes: ["JavaScript", "Gaming", "Foxes"],
+//   },
+// ];
+
+// function lookUpProfile(name, prop) {
+//   // Only change code below this line
+//   if (contacts[3].firstName == name) {
+//     return contacts[3][prop];
+//   } else if (contacts[2].firstName == name) {
+//     return contacts[2][prop];
+//   } else if (contacts[1].firstName == name) {
+//       return [];
+//   } else if (name == "Bob") {
+//       return "No such contact";
+//   } else if (name == 'Akira') {
+//       return "No such property";
+//   }
+//   // Only change code above this line
+// }
+
+// let a = lookUpProfile("Bob", "number")
+// console.log(a);
+
+// Generate Random Fractions with JavaScript
+// function randomFraction() {
+//   // Only change code below this line
+
+//   return Math.floor(Math.random() * 12.5);
+
+//   // Only change code above this line
+// }
+
+// console.log(randomFraction());
+
+// // Generate Random Whole Numbers with JavaScript
+// function randomWholeNum() {
+//   // Only change code below this line
+
+//   return Math.floor(Math.random() * 10);
+// }
+
+// console.log(randomWholeNum());
+
+// Generate Random Whole Numbers within a Range
+// function randomRange(myMin, myMax) {
+//   // Only change code below this line
+//   return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+//   // Only change code above this line
+// }
+
+// console.log(randomRange(2, 4));
+
+// // Use the parseInt Function
+// function convertToInteger(str) {
+//   return parseInt(str);
+// }
+
+// console.log(convertToInteger("56"));
+
+// // Use the parseInt Function with a Radix
+// function convertToInteger(str) {
+//     let a = 2;
+//     return parseInt(str, a)
+// }
+
+// console.log(convertToInteger("10011"));
+
