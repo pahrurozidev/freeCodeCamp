@@ -835,7 +835,7 @@
 
 // console.log(myArray);
 
-// // Replace Loops using Recursion
+// Replace Loops using Recursion
 // function sum(arr, n) {
 //   if (n <= 0) {
 //     return 0;
@@ -938,3 +938,39 @@
 
 // console.log(convertToInteger("10011"));
 
+// // Use the Conditional (Ternary) Operator
+// function checkEqual(a, b) {
+//   return a != b ? "Not Equal" : "Equal";
+// }
+
+// let a = checkEqual(1, -1);
+
+// console.log(a);
+
+// // Use Multiple Conditional (Ternary) Operators
+// function checkSign(num) {
+//   return num < 0 ? "negative" : num == 0 ? "zero" : "positive";
+// }
+
+// console.log(checkSign(0));
+
+// // Use Recursion to Create a Countdown
+
+// function countdown(n) {
+//   return n < 1 ? [] : [n, ...countdown(n - 1)];
+// }
+
+// console.log(countdown(1));
+
+// Use Recursion to Create a Range of Numbers
+// function rangeOfNumbers(startNum, endNum) {
+//   if (endNum - startNum === 0) {
+//     return [startNum];
+//   } else {
+//     var numbers = rangeOfNumbers(startNum, endNum - 1);
+//     numbers.push(endNum);
+//     return numbers;
+//   }
+// }
+
+// console.log(rangeOfNumbers(1, 5));
